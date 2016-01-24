@@ -1,0 +1,17 @@
+{
+  "name": "atom-monkberry",
+  "version": "1.0.0",
+  "description": "Atom support for Monkberry templates.",
+  "license": "MIT",
+  "main": "monkberry-templates.coffee",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monkberry/atom-monkberry"
+  },
+  "bugs": {
+    "url": "https://github.com/monkberry/atom-monkberry/issues"
+  }
+}

@@ -1,0 +1,16 @@
+{% import "post.monk" %}
+<div>
+  {% for post of posts %}
+    <article>
+      <header>{{ post.title }}</header>
+      <section class="content">
+        {{ post.content | markdown }}
+      </section>
+      <section class="comments">
+        {% if comments.length > 0 %}
+          {{ "Comments:" + comments.length }}
+        {% endif %}
+      </section>
+    </article>
+  {% endfor %}
+</div>
