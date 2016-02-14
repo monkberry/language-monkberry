@@ -1,0 +1,55 @@
+{
+  "fileTypes": [
+    "monk"
+  ],
+  "name": "Monkberry",
+  "patterns": [
+    {
+      "comment": "Since html is valid in Monkberry templates include the html patterns",
+      "include": "text.html.basic"
+    },
+    {
+      "begin": "{{",
+      "patterns": [
+        {
+          "include": "source.js"
+        }
+      ],
+      "end": "}}",
+      "name": "variable.other.monkberry.template"
+    },
+    {
+      "begin": "({%)",
+      "captures": {
+        "1": {
+          "name": "entity.other.monkberry.tagbraces"
+        }
+      },
+      "end": "(%})",
+      "name": "meta.scope.monkberry.template.tag",
+      "patterns": [
+        {
+          "match": "\\b(for|endfor|if|import|else|endif|block|endblock|unsafe)\\b",
+          "name": "keyword.control.monkberry.template"
+        },
+        {
+          "match": "\\b(of)\\b",
+          "name": "keyword.operator.monkberry.template"
+        },
+        {
+          "begin": "('|\")",
+          "end": "\\1",
+          "name": "string.other.monkberry.template.tag"
+        },
+        {
+          "match": "[a-zA-Z_]+",
+          "name": "string.unquoted.monkberry.template.tag"
+        },
+        {
+          "include": "source.js"
+        }
+      ]
+    }
+  ],
+  "scopeName": "text.html.monkberry"
+}

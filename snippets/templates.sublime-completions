@@ -1,0 +1,37 @@
+{
+  "scope": "text.html.monkberry",
+  "completions": [
+    {
+      "trigger": "var",
+      "contents": "{{ $1 }}"
+    },
+    {
+      "trigger": "for",
+      "contents": "{% for $1 of $2 %}\n\t$3\n{% endfor %}"
+    },
+    {
+      "trigger": "if",
+      "contents": "{% if $1 %}$2{% endif %}"
+    },
+    {
+      "trigger": "else",
+      "contents": "{% else %}"
+    },
+    {
+      "trigger": "ife",
+      "contents": "{% if $1 %}$2{% else %}$3{% endif %}"
+    },
+    {
+      "trigger": "import",
+      "contents": "{% import \"$1\" %}"
+    },
+    {
+      "trigger": "unsafe",
+      "contents": "{% unsafe $1 %}"
+    },
+    {
+      "trigger": "block",
+      "contents": "{% block \"$1\" %}\n\t$2\n{% endblock %}"
+    }
+  ]
+}
