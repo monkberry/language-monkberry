@@ -1,4 +1,4 @@
-{% import "post.monk" %}
+{% import upperCase from "upper-case" %}
 <div>
   {% for post of posts %}
     <article>

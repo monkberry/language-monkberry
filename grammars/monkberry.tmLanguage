@@ -56,7 +56,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(of)\b</string>
+					<string>\b(of|from)\b</string>
 					<key>name</key>
 					<string>keyword.operator.monkberry.template</string>
 				</dict>

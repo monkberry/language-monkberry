@@ -22,7 +22,7 @@
     },
     "import": {
       "prefix": "import",
-      "body": "{% import \"$1\" %}"
+      "body": "{% import $1 from \"$2\" %}"
     },
     "unsafe": {
       "prefix": "unsafe",

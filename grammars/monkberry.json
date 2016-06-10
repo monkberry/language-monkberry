@@ -33,7 +33,7 @@
           "name": "keyword.control.monkberry.template"
         },
         {
-          "match": "\\b(of)\\b",
+          "match": "\\b(of|from)\\b",
           "name": "keyword.operator.monkberry.template"
         },
         {

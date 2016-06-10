@@ -23,7 +23,7 @@
     },
     {
       "trigger": "import",
-      "contents": "{% import \"$1\" %}"
+      "contents": "{% import $1 from \"$2\" %}"
     },
     {
       "trigger": "unsafe",
