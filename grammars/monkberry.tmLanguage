@@ -50,7 +50,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(for|endfor|if|import|else|endif|block|endblock|unsafe)\b</string>
+					<string>\b(for|of|endfor|if|else|endif|import|from|block|endblock|unsafe)\b</string>
 					<key>name</key>
 					<string>keyword.control.monkberry.template</string>
 				</dict>

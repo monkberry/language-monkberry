@@ -29,7 +29,7 @@
       "name": "meta.scope.monkberry.template.tag",
       "patterns": [
         {
-          "match": "\\b(for|endfor|if|import|else|endif|block|endblock|unsafe)\\b",
+          "match": "\\b(for|of|endfor|if|else|endif|import|from|block|endblock|unsafe)\\b",
           "name": "keyword.control.monkberry.template"
         },
         {
